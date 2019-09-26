@@ -119,9 +119,6 @@
     </script>
     <div class="container" ng-controller="mainController">
         <toaster-container toaster-options="{'time-out': 3000, 'close-button': true, 'position-class': 'toast-bottom-right'}"></toaster-container>
-        <h1>Convertir DTE xml a pdf</h1>
-        <p>Un DTE (Documento Tributario Electrónico) es un archivo XML que puede representar una factura electrónica, una guia de despacho, una nota de crédito o débito, etc.</p>
-        <p>Con esta herramienta puedes convertir uno o varios DTEs (XMLs en formato del <a href="http://www.sii.cl" target="_blank">sii.cl</a>) a PDF amigable y leíble.<br /></p>
 
         <form id="form" method="post" enctype="multipart/form-data" style="margin-top: 50px">
 
@@ -130,10 +127,6 @@
                 <input type="file" class="form-control" id="files" name="dummy" multiple ng-disabled="processing" accept=".xml" />
             </div>
 
-            <div class="form-group">
-                <label>Clave secreta (uso comercial)</label>
-                <input type="password" class="form-control" ng-disabled="processing" ng-model="bagKey" placeholder="" />
-            </div>
 
 
             <div class="form-group" style="margin-top: 20px">
@@ -177,15 +170,7 @@
                     </tr>
                 </table>
 
-                <div class="alert alert-info">
-                    <p><strong>Notas:</strong></p>
-                    <ul>
-                        <li>Se le proveerá de una clave secreta y una página para consultar el saldo</li>
-                        <li>Se le emitirá una factura electrónica de nuestra empresa (Edge Sistemas Ltda)</li>
-                        <li><strong>Solo 1 RUT por bolsa</strong> (es decir: en los XML debe estar presente ese RUT, ya sea como emisor o receptor)</li>
-                        <li>La bolsa expira en 4 meses</li>
-                    </ul>
-                </div>
+
             </div>
         </form>
 
@@ -225,51 +210,9 @@
 
         <hr style="margin-top: 30px" />
 
-        <h2>Contacto comercial</h2>
-        <p>Para uso comercial, contactar a:</p>
-        <ul>
-            <li><a href="mailto:gvicencio@edge.cl" target="_blank">gvicencio@edge.cl</a></li>
-            <li><a href="http://www.edge.cl" target="_blank">http://www.edge.cl</a></li>
-        </ul>
 
         <hr style="margin-top: 30px" />
 
-        <h2>Publicidad</h2>
-        <p>Si te sirvió esta herramienta puedes agradecer pinchando en la publicidad:</p>
-
-        <div style="border: 2px solid black">
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- dte-responsive -->
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4788671699956881" data-ad-slot="3762336651" data-ad-format="auto"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
-
-        <hr style="margin-top: 20px" />
-
-        <h2>Changelog</h2>
-        <ul>
-            <li>Build 11 (2019-05-23): Recaptcha y restricciones de uso</li>
-            <li>Build 10 (2018-08-27): Se muestran referencias (notas de crédito y débito)</li>
-            <li>Build 9 (2018-08-22): Soporte de Boleta Electrónica</li>
-            <li>Build 8 (2018-08-22): Timbre electrónico, se corrigió bug cuando se subían varios archivos</li>
-            <li>Build 7 (2017-06-21): HTTPS</li>
-            <li>Build 6 (2016-04-12): Soporte de XML con varios DTE's adentro (&lt;SetDTE&gt;)</li>
-            <li>Build 5 (2015-05-20): Soporte RespuestaDTE y AEC (además de EnvioDTE)</li>
-            <li>Build 4 (2015-03-27): Zip</li>
-            <li>Build 3 (2015-03-26): Múltiples archivos</li>
-            <li>Build 2 (2015-03-25): Arreglos varios</li>
-            <li>Build 1 (2015-03-25): Versión 1</li>
-        </ul>
-
-        <!--<hr style="margin-top: 20px" />
-
-        <div class="fb-comments" data-href="https://dte.azurewebsites.net" data-width="100%" data-numposts="5"></div>-->
-
-        <hr />
-
-        <p style="text-align: center">Desarrollado por <a target="_blank" href="http://www.edge.cl">edge.cl</a> y <a target="_blank" href="http://www.manger.cl">manger.cl</a> / contacto: +569 97420235 / gvicencio@edge.cl</p>
     </div>
 
     <script type="text/ng-template" id="bag-modal.html">
