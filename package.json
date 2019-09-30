@@ -1,0 +1,23 @@
+{
+  "name": "facturas",
+  "version": "1.0.0",
+  "description": "Proyecto para la lectura de facturas y pasarlas a PDF",
+  "main": "index.js",
+  "dependencies": {
+    "xml2js": "^0.4.22"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanshocl/Facturas.git"
+  },
+  "author": "Juanshocl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanshocl/Facturas/issues"
+  },
+  "homepage": "https://github.com/juanshocl/Facturas#readme"
+}
