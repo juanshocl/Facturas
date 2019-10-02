@@ -4,7 +4,8 @@
   "description": "Proyecto para la lectura de facturas y pasarlas a PDF",
   "main": "index.js",
   "dependencies": {
-    "xml2js": "^0.4.22"
+    "xml2js": "^0.4.22",
+    "xml2json": "^0.11.2"
   },
   "devDependencies": {},
   "scripts": {
